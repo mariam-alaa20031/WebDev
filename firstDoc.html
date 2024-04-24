@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+   <head>
+      <title>HTML rules</title>
+      <meta charset='utf-8' lang='en'>
+      <link rel="stylesheet" href="styleHTML.css">
+   </head>
+   <body>
+ <header >
+     <nav >
+      <li > <a href='#1'>Introduction to HTML</a></li>
+      <li > <a href='#2'>HTML elements </a></li>
+      <li > <a href='#3'>Importance of h1 </a></li>
+       <li > <a href='#4'>Character problems </a></li>
+       <li > <a href='#5'>HTML's a tag attributes </a></li>
+     </nav> 
+  </header>
+
+     <h1 id='title'>HTML Basic Must Read</h1>
+
+  <div class='flex-container'>
+     <div class="first">
+      <h3 id='1'>
+      Q1: What does HTML stand for?
+        </h3>
+   <p>
+      Answer: HyperText Markup Language.
+   </p>
+         </div>
+     <div>    
+     <h3>
+     Q2: What is HTML used for?
+  </h3>
+     <p>
+      Answer: Defining the structure of the webpage.
+     </p>
+  </div>
+  <div>
+     <h3>Q3: What are HTML tags?</h3>
+     <p>Answer: These are the elements of the webpage that define its structure. These have 3 properties (first is a must):</p>
+      <ul> 
+         <li>Opening tag (example: &lt;h1&gt;)
+         </li>
+         <li>Closing tag (example: &lt;/h1&gt;)
+         </li>
+         <li>Attributes (example: id in &lt;h1 id='pageTitle'&gt;)
+         </li>
+      </ul> 
+     <aside>Note: each id value given to elements in an html page should be unique. 2 elements <span class="important">cannot</span> have the same id.</aside> </div>
+     <div>
+   <h3 id='2'>Q4: What are HTML element heading types?</h3>
+      <ul>
+         <li> &lt;h1&gt; : element wrapping around content of what this page is about (usually the webpage's big title).
+         </li>
+         <li>&lt;h2&gt; : less important than h1 
+         </li>
+         <li>&lt;h3&gt; : less important than h1,h2
+         </li>
+         <li>&lt;h4&gt; : less important than h1,h2,h3
+         </li>
+           <li>&lt;h5&gt; : less important than h1,h2,h3,h4
+         </li>
+         <li>&lt;h6&gt; : least important 
+         </li>
+      </ul>
+      <aside>Note: &lt;h1&gt; HTML Basic Must READ &lt;/h1&gt; This is an example of using the h1 element in an html document. In fact it is used as this webpage's title. <a href='#title'>click here</a> to check it out :) </aside></div>
+      <div>
+      <h3>Q5: What are HTML element examples?</h3>
+      <ul>
+         <li> &lt;header&gt; : usually contains navbar and logo
+         </li>
+         <li>&lt;nav&gt; : wraps around content that are links to other pages
+         </li>
+         <li>&lt;section&gt; : usually contains article elements inside
+         </li>
+         <li>&lt;article&gt; : could contain section elements inside
+         </li>
+           <li>&lt;aside&gt; : contains aside info that is relevent to topic but was't mentioned (usually at end of webpage)
+         </li>
+         <li>&lt;footer&gt; : placed at bottom of webpage
+         </li>
+      </ul></div>
+      <div>
+      <h3 id='4'>Q6: How to escape the rendering issues when using < or > or &?</h3>
+      <p>Answer: Using &lt; , &gt; or &amp; usually would cause a problem in rendering html pages. Consider an example where you want to add a &lt;section&gt; as a content to an html element. How would the browser interpret it as a text and not an element in this case? To do this you have to learn how to escape them. Below is the trick: <ul>
+         <li>
+            &lt; : '&' followed by 'lt' followed by a ';' with no space would give you the character itself 
+         </li>
+         <li>
+            &gt; : '&' followed by 'gt' followed by a ';' with no space would give you the character itself 
+         </li>
+         <li>
+            &amp; : '&' followed by 'amp' followed by a ';' with no space would give you the character itself 
+         </li>
+      </ul></p>
+   <aside>
+      Note: You do not add the single quotations. I'm just using them to specify the syntax. (example: by '&', I just mean a simple &)
+   </aside>
+   </div>
+      <div>
+ <h3>Q6: What are some encoding symbols to know?</h3>
+     <ul>
+         <li>
+            &copy; : '&' followed by 'copy' followed by a ';' with no space would give you the copyright symbol
+         </li>
+         <li>
+            &quot; : '&' followed by 'quot' followed by a ';' with no space would give you the copyright symbol
+         </li>
+         <li>
+            None breaking space : This is used as a '&' followed by 'nbsp' followed by a ';' with no space, and it is used in cases where you want multiple sequential words in a paragraph for instance to always appear next to each other. Consider a case where a paragraph ending is 'the end'. If you squeeze the webpage from side, reducing its width, 'end' could appear on the beginning of the next line. This is the case where you could use an nbsp unicode. When used in between the 2 words, they will appear as 'the end' either on the end of the line before or on the start of the new line but always next to each other.
+         </li>
+
+      </ul></p>
+             </div>
+       <div>      
+       <h3 id='3'>Q7: Is choosing a certain page title using h1 tag important for SEO?
+       </h3>
+       <p>Answer: Choosing the h1 content in html is believed to help a browser like Google and other browsers in search engine optimizations. Your page will be linked further in the top if it matches google's search prompt even more.</p></div>
+       <div >
+       <h3 id='5'>Q8: What are the important 'a' tag attributes?
+       </h3>
+       <ul>
+           <li>
+           title: used in screen reader for blind people
+         </li>
+          <li>
+           href: used to specify the link of the page/section we want to redirect to or reach. <ul>
+              <li>&lt;a href='#id_value'&gt; : id_value should be replaced by actual id of attribute value given to a certain element in the html page. This is used to jump to sections in a very long webpage for instance.</li>
+               <li>&lt;a href='about.html'&gt; : about.html in this case is another html page in the same folder directory of this webpage's html file. This is an example of a relative path. </li>
+               <li>&lt;a href='https://www.google.com'&gt; : the website in this case is an example of an absolute path. </li>
+           </ul>
+         </li>
+         <li>
+           target: &lt;a target='_blank'&gt; The _blank value is used to redirect to the href specified in a <span class="important">new tab</span>. 
+         </li>
+
+
+      </ul>
+      </div>
+      <div class='last'>
+         <h3 >
+            Q9: How are html elements displayed?
+         </h3>
+         <p>Answer: HTML elements are either block elements or inline elements by default. Block elements would have the property of spanning the entire width of the screen. If you consider an example of placing 2 div elements as such inside the body tags, &lt;div&gt;This is the first Div&lt;/div&gt;&lt;div&gt;This is the second Div&lt;/div&gt; , the second div would appear right below the first div. This is how block elements would display themselves in a browser. Some examples of these block elements include the div element, the h1,h2... elements and many other elements as well. Inline elements on the other hand can fit themselves on the same line. Consider a case of having a paragraph using p tag and then after the closing tag of the paragraph, you use a span element to write some few words after the paragraph. In this case, the content of the span element would appear in the same line as the last paragraph line. It wouldn't go on a whole new line by default because it's not a block element. Changing the display property of an element is possible (span's element display property could be changed to block instead of inline), but that's not the content of this section. </p>
+         <aside>
+            Note: The browser displays the page elements according to the order you place them inside the body tags. 
+         </aside>
+      </div>
+      <div>
+         <h3>Try it out yourself!</h3>
+         <p>Below is an example of a very simple html page. It's important to note that the initial line in the page below is necessary for the browser to understand that it will render this page according to html standards. The html tags are indication that whatever is inside is necessary information for page rendering by the browser and the content itself. The head tags are relevant information but won't be a part of your content. The title is what appears in the tab when you run the html document, and the meta charset= 'utf-8' is for the character encodings. Whatever is inside the body tag is what appears on your web page. Click the run button to check how the browser would display the below page :)</p>
+         <div class= flex-bigger>
+          <div class='flex-wrapper' >
+         <div class="example">
+         <p>
+            &lt;!doctype html&gt;  
+
+         </p>
+         <p>
+            &lt;html&gt;  
+            
+         </p>
+          <p>
+            &lt;head&gt;
+            
+         </p>
+             <p>
+            &lt;title&gt;Html Example&lt;/title&gt;
+            
+         </p>
+         <p>
+            &lt;meta charset="utf-8"&gt;
+            
+         </p>
+          <p>
+            &lt;/head&gt;
+         </p>
+         <p>
+            &lt;body&gt;
+            
+         </p>
+         <p>
+            &lt;h1&gt;HTML Basics&lt;/h1&gt;
+         </p>
+         <p>
+            &lt;p&gt;Congrats you've successfully finished the HTML basics! &lt;/p&gt;
+            
+         </p>
+          <p>
+            &lt;/body&gt;
+            
+         </p>
+          <p>
+            &lt;/html&gt;
+            
+         </p>
+         <div >
+         <a href="secondDoc.html" target="_blank">run</a></div>
+      </div>
+   </div>
+      </div>
+       </div>
+    </div>
+   </div>
+      <br>
+      <aside>
+         Awesome! Now that you're done with some html basics, go check out css <a href="./css.html" target="_blank">Go to css</a>
+      </aside>
+      <footer>&copy; MA 2024</footer>
+          </body>
+
+
+
+</html>
